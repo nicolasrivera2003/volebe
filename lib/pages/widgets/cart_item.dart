@@ -21,29 +21,34 @@ class CartItem extends StatelessWidget {
         ],
       ),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Padding(
-            padding: EdgeInsets.only(left: 8.0),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
+          Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.only(left: 8.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  alignment: Alignment.centerLeft,
+                  child: Image.asset(
+                    'assets/images/item1.png',
+                    height: 100,
+                    width: 100,
+                  ),
+                ),
               ),
-              alignment: Alignment.centerLeft,
-              child: Image.asset(
-                'assets/images/item1.png',
-                height: 100,
-                width: 100,
-              ),
-            ),
-          ),
 
-          SizedBox(
-            width: 190,
-            child: Text(
-              'Micrófono para celulares',
-              overflow: TextOverflow.ellipsis,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-            ),
+              SizedBox(
+                width: 190,
+                child: Text(
+                  'Micrófono para celulares',
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                ),
+              ),
+            ],
           ),
 
           CupertinoButton(child: Icon(CupertinoIcons.trash, color: Colors.red,), onPressed: (){})

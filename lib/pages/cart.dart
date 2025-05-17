@@ -15,7 +15,7 @@ class _CartState extends State<Cart> {
     return Stack(
       children: [
         Scaffold(
-          backgroundColor: Colors.grey.shade900,
+          backgroundColor: Color(0xff42291A),
           body: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: ListView(
@@ -51,7 +51,7 @@ class _CartState extends State<Cart> {
     return Row(
       children: [
         CupertinoButton(
-          child: Icon(CupertinoIcons.back, color: Colors.white, size: 30),
+          child: Icon(CupertinoIcons.back, color: Color(0xffDBB27E), size: 30),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -68,7 +68,7 @@ class _CartState extends State<Cart> {
         style: TextStyle(
           fontSize: 30,
           fontWeight: FontWeight.bold,
-          color: Colors.white,
+          color: Color(0xffDBB27E),
         ),
       ),
     );
@@ -85,7 +85,7 @@ class _CartState extends State<Cart> {
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
-              color: Colors.white,
+              color: Color(0xffDBB27E),
             ),
           ),
 
@@ -96,7 +96,7 @@ class _CartState extends State<Cart> {
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,
-              color: Colors.white,
+              color: Color(0xffDBB27E),
             ),
           ),
         ],

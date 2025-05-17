@@ -18,14 +18,14 @@ class _MarketState extends State<Market> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      backgroundColor: Colors.grey.shade900,
+      backgroundColor: Color(0xff42291A),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.grey.shade900,
+                color: Color(0xff42291A),
               ),
               child: Text(
                 'Menu',
@@ -79,7 +79,7 @@ class _MarketState extends State<Market> {
                 CupertinoButton(
                   child: Icon(
                     CupertinoIcons.bars,
-                    color: Colors.white,
+                    color: Color(0xffDBB27E),
                     size: 30,
                   ),
                   onPressed: () {
@@ -90,7 +90,7 @@ class _MarketState extends State<Market> {
                 CupertinoButton(
                   child: Icon(
                     CupertinoIcons.cart,
-                    color: Colors.white,
+                    color:Color(0xffDBB27E),
                     size: 30,
                   ),
                   onPressed: () {
@@ -106,7 +106,7 @@ class _MarketState extends State<Market> {
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 10),
-              child: Image.asset('assets/images/volebe_white.png'),
+              child: Image.asset('assets/images/volebe_white.png', color: Color(0xffDBB27E),),
             ),
 
             SizedBox(height: 30),
@@ -118,7 +118,7 @@ class _MarketState extends State<Market> {
                 Text(
                   'Market:',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color(0xffDBB27E),
                     fontSize: 20,
                   ),
                 ),
